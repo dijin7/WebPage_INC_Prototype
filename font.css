@@ -1,0 +1,49 @@
+/*POPPINS*/
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins/Poppins-Thin.ttf) format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins/Poppins-Medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins/Poppins-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins/Poppins-Bold.ttf) format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins/Poppins-ExtraBold.ttf) format("truetype");
+    font-weight: 900;
+}
+
+/* INTER*/
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter/Inter_18pt-SemiBold.ttf) format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter/Inter_18pt-Bold.ttf) format("truetype");
+    font-weight: 900;
+}
