@@ -4,11 +4,7 @@ body{
 
     margin: 0;
     padding: 0;
-
-    width: 100vw;
-    overflow-x: hidden;
 }
-
 
 
 /*BAR------------------------------------------------------------*/
@@ -17,7 +13,7 @@ body{
 
 
 .start_green_bar{
-    width: calc(100vw);
+    width: calc(100vw - 16px);
     height: auto;
     background-image: url(images/Plants\ with\ Sky.png);
     background-color: #a7c957; /*#c6ff69c7*/
@@ -73,33 +69,30 @@ body{
     display: inline-block;
 }
 
+.buttons_in_green_bar{
+    width: 150%;
+    height: 100%;
 
-    .buttons_in_green_bar{
-        width: 150%;
-        height: 100%;
+    background-color: #bc4749;
+    box-shadow: 0px 0px 5px 0px #111;   
+    border-radius: 20px;
 
-        background-color: #bc4749;
-        box-shadow: 0px 0px 5px 0px #111;   
-        border-radius: 20px;
-
-        margin: auto;
-        padding: auto;
-        padding-top: 20%;
-        text-align: center;
-        font-size: medium;
-        color: #f2e8cf;
-
-
-        border-color: #f2e8cf;
-        border-style: solid;
-        border-width: 5%;
-        border-radius: 10%;
-
-        box-sizing: border-box;
-    }
+    margin: auto;
+    padding: auto;
+    padding-top: 20%;
+    text-align: center;
+    font-size: medium;
+    color: #f2e8cf;
 
 
+    border-color: #f2e8cf;
+    border-style: solid;
+    border-width: 5%;
+    border-radius: 10%;
 
+    box-sizing: border-box;
+
+}
 
 .icon_bar_button_position_1{
     grid-row: 1/1;
@@ -123,24 +116,12 @@ body{
 }
 
 
-@media(max-width: 700px){
-    .buttons_in_green_bar{
-        font-size: 0;
-        height: 0;
-        width: 0;
-        background-color: #00000000;
-        display: none;
-        visibility: hidden;
-    }
-}
-
-
 
 /*WELCOME -----------------------------------------------------------*/
 
 
 .container_welcome_image{
-    width: 100vw;
+    width: calc(100vw - 16px);
     height: 80vh;
 
     display: grid;
@@ -214,7 +195,7 @@ body{
 
 /*PRINCIPAL IMAGE AND CARD mision------------------------------------------------------------*/
 .container_principal_image_mision{
-    width: 100vw;
+    width: calc(100vw - 16px);
     height: auto;
 
     
@@ -319,7 +300,7 @@ body{
     margin-left: 2vw;
     font-size: xx-large;
     grid-row: 1/1;
-    grid-column: 2/9;
+    grid-column: 2/8;
 }
 
 .research_focus_text{
@@ -331,7 +312,7 @@ body{
 
 .research_focus_section_boxes{
     height: auto;
-    width: 100vw;
+    width: calc(100vw - 16px);
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(1,1fr);
@@ -370,78 +351,7 @@ body{
 }
 
 
-@media(max-width: 700px){
-    .research_focus_section_boxes{
-        height: auto;
-        width: 100vw;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3,1fr);
-    
-        box-sizing: border-box;
-    }
-
-    .research_focus_box{
-        background-color: #f2e8cf;
-        width: 80%;
-        margin: auto;
-        box-sizing: border-box;
-        font-size: medium;
-        margin: auto;
-        padding: 1vw;
-        min-height: auto;
-        height: auto;
-        
-        border-radius: 2%;
-        color: #bc4749;
-    }
-
-    .research_focus_box1{
-        grid-row: 1/1;
-        grid-column: 1/1;
-    }
-    
-    .research_focus_box2{
-        grid-row: 2/2;
-        grid-column: 1/1;
-    }
-    
-    .research_focus_box3{
-        grid-row: 3/3;
-        grid-column: 1/1;
-    }
-
-
-
-    /*this fix may not be completely correct*/
-    .research_container_icon{
-        display: flex;
-        align-items: center;
-    }
-    .research_focus_circle{
-        width: 10vw;
-        height: 10vw;
-        border-radius: 100%;
-    }
-    .research_focus_icon{
-        width: 7vw;
-        height: 8vw;
-        margin-left: -8vw;
-        margin-top: -1vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .research_focus_title{
-        color: #fff;
-        margin-left: 2vw;
-        margin-top: 8vh;
-        font-size: xx-large;
-    }
-}
-
-
-/*INTERNATIONAL COMMERCE / OUR PROJECTS----------------------------------------------------*/
+/*OUR PROJECTS----------------------------------------------------*/
 
 .our_prorjects_background_color{
     background-color: rgb(67, 22, 0);
@@ -483,7 +393,7 @@ body{
 /*BOXES--------------------------------------------------------------*/
 .our_projects_container_boxes{
     height: auto;
-    width: 100vw;
+    width: calc(100vw - 16px);
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -564,7 +474,7 @@ body{
 }
 
 .container_contact_boxes{
-    width: 100vw;
+    width: calc(100vw - 16px);
     height: auto;
     background-color: #1f1f1f;
     padding-top: 5vh;
@@ -573,7 +483,7 @@ body{
 }
 
 .container_contacts_grid{
-    width: auto;
+    width: calc(90vw - 16px);
     height: auto;
     background-color: #1f1f1f;
     padding-top: 5vh;
