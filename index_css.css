@@ -20,6 +20,8 @@ html{
 }
 
 
+
+
 /*BAR------------------------------------------------------------*/
 
 
@@ -37,20 +39,13 @@ html{
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(1,1fr);
 
+    align-items: center ;
+
     box-sizing: border-box;
 }
 
 
-.icon{
-    width: 32vw;
-    height: 14vh;
-    background-image: url(icons/LOGO.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-}
-
-.icon_without{
+.start_icon_without{
     width: 14vh;
     height: 14vh;
     background-image: url(icons/LOGO\ ISC.svg);
@@ -82,30 +77,37 @@ html{
     display: inline-block;
 }
 
+.buttons_in_green_bar{
+    width: 150%;
+    height: 10vh;
 
-    .buttons_in_green_bar{
-        width: 150%;
-        height: 100%;
+    background-color: #521819;
+    box-shadow: 0px 0px 5px 0px #111;   
+    border-radius: 20px;
 
-        background-color: #bc4749;
-        box-shadow: 0px 0px 5px 0px #111;   
-        border-radius: 20px;
+    margin: auto;
+    padding: auto;
+    
 
-        margin: auto;
-        padding: auto;
-        padding-top: 20%;
-        text-align: center;
-        font-size: medium;
-        color: #f2e8cf;
+    text-align: center; 
+    font-size: medium;
+    color: #f2e8cf;
 
 
-        border-color: #f2e8cf;
-        border-style: solid;
-        border-width: 5%;
-        border-radius: 10%;
+    border-color: #f2e8cf;
+    border-style: solid;
+    border-width: 5%;
+    border-radius: 10%;
 
-        box-sizing: border-box;
-    }
+    box-sizing: border-box;
+
+    font-size: 4vh;
+    justify-content: space-between;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -118,7 +120,7 @@ html{
 .icon_bar_button_position_2{
     grid-row: 1/1;
     grid-column: 8/9;
-    font-size: small;
+    font-size: 2.5vh;
 }
 
 .icon_bar_button_position_3{
@@ -132,7 +134,20 @@ html{
 }
 
 
+@media(max-width: 1050px) and (min-height: 700px){
+    .buttons_in_green_bar{
+        width: 150%;
+        height: 10vw;
+        font-size: 2vw;
+    }
+
+    .icon_bar_button_position_2{
+        font-size: 1.5vw;
+    }
+}
+
 @media(max-width: 700px){
+    
     .buttons_in_green_bar{
         font-size: 0;
         height: 0;
@@ -142,9 +157,9 @@ html{
         visibility: hidden;
         pointer-events: none;
     }
-
-
 }
+
+
 
 
 
@@ -306,7 +321,7 @@ html{
 
 /*research focus---------------------------------------------------*/
 .research_focus_background_color{
-    background-color: #386641;
+    background-color: #488c56;
     padding-top: 5vh;
     padding-bottom: 5vh;
     height: auto;
@@ -322,6 +337,8 @@ html{
         grid-template-rows: repeat(1,1fr);
 
         box-sizing: border-box;
+
+        
     }
 
     .research_focus_circle{
@@ -382,7 +399,6 @@ html{
         font-size: medium;
         margin-top: 15vh;
         padding: 1vw;
-        min-height: 60vh;
         height: auto;
         
         border-radius: 2%;
@@ -475,11 +491,20 @@ html{
     }
 }
 
+/*tablet*/
+@media(min-width: 700px) and ((aspect-ratio:3/4) or (aspect-ratio:5/7) or (aspect-ratio:512/683) or (aspect-ratio:2/3) or (aspect-ratio:853/1280) or (aspect-ratio:1024/1366)){
+    /*.research_focus_box{
+        
+    }*/
+}
+
+
 
 /*INTERNATIONAL COMMERCE / OUR PROJECTS----------------------------------------------------*/
 
 .our_prorjects_background_color{
     background-color: rgb(67, 22, 0);
+    box-shadow: 0px 0px 10px 10px rgb(67, 22, 0);
 }
 
 .container_projects{
@@ -527,52 +552,109 @@ html{
 }
 
 .container_boxes{
-    display: flex;
     align-items: center;
     width: 100%;
     padding-bottom: 10vh;
 }
 
-.box_transparent{
-    width: 30vw;
-    height: auto;
-    background-color: #1114;
-    margin: auto;
-    margin-top: 5vh;
-    text-align: center;
-    padding: 2%;
-    box-sizing: border-box;
-    border-radius: 5%;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.our_project_box1{
-    grid-row: 1/1;
-    grid-column: 1/1;
-}
-.our_project_box2{
-    grid-row: 1/1;
-    grid-column: 2/2;
-}
-.our_project_box3{
-    grid-row: 2/2;
-    grid-column: 1/1;
-}
-.our_project_box4{
-    grid-row: 2/2;
-    grid-column: 2/2;
-}
-
 .boxes_images{
-    height: 40%;
-    width: 80%;
-    background-size: cover;
+    width: 100%;
+    height: 50vh;
+
+
+    background-position: center;
     background-repeat: no-repeat;
+    background-color: rebeccapurple;
+    background-size: contain;
     background-position: center;
 }
+
+@media(min-width: 701px){
+    .box_transparent{
+        width: 40vw;
+        height: 40vh;
+        /*background-color: #1114;*/
+        text-align: center;
+        box-sizing: border-box;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        margin-top: 10vh;
+        margin-bottom: 40vh;
+        margin-left: 5vw;
+
+
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+
+    .our_projects_container_boxes{
+        height: auto;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    
+        box-sizing: border-box;
+    }
+
+
+    .our_project_box1{
+        grid-row: 1/1;
+        grid-column: 1/1;
+    }
+    .our_project_box2{
+        grid-row: 1/1;
+        grid-column: 2/2;
+    }
+    .our_project_box3{
+        grid-row: 2/2;
+        grid-column: 1/1;
+    }
+    .our_project_box4{
+        grid-row: 2/2;
+        grid-column: 2/2;
+    }
+
+
+    @media(max-height: 600px){
+        .boxes_images{
+            width: 100%;
+            height: 30vh;
+        }
+    }
+    @media(max-height: 400px){
+        .boxes_images{
+            width: 100%;
+            height: 15vh;
+        }
+    }
+
+    
+}
+
+
+
+
+.international_commerce_image_ubication{
+    grid-row: 1/2;
+    grid-column: 1/7;
+    border-radius: 5%;
+}
+.international_commerce_TITLE_ubication{
+    grid-row: 3/3;
+    grid-column: 2/6;
+}
+.international_commerce_SUBTITLE_ubication{
+    grid-row: 4/4;
+    grid-column: 2/6;
+    text-align: justify;
+}
+
+
 
 .text_boxes_title{
     color: #fff;
@@ -631,12 +713,35 @@ html{
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    .boxes_images{
+        width: 100%;
+        height: 60vh;
+    
+    
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rebeccapurple;
+        background-size: contain;
+        background-position: center;
+    }   
 }
 
 
 
 
 /*CONTACT BOXES---------------------------------------------------------------*/
+
+
+.final_icon_without{
+    width: 14vh;
+    height: 14vh;
+    background-image: url(icons/LOGO\ ISC.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
 
 .icon_text_white{
     font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -651,6 +756,8 @@ html{
     padding-top: 5vh;
     padding-left: 5vw;
     box-sizing: border-box;
+
+    box-shadow: 0px 0px 10px 0px #000000;
 }
 
 .container_contacts_grid{
