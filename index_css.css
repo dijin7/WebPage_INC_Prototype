@@ -756,13 +756,21 @@ html{
     width: 100%;
     height: 100%;
 
-    background-image: url(images/soy-evolution.png);
-    background-size:contain;
+    
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+}
 
+.what_process_soy_imag_1{
+    background-image: url(images/Soy\ In\ Hand.jpg);
     grid-row: 1/7;
-    grid-column: 1/7;
+    grid-column: 1/4;
+}
+.what_process_soy_imag_2{
+    background-image: url(images/Soy\ for\ harvest.jpg);
+    grid-row: 1/7;
+    grid-column: 4/7;
 }
 
 
@@ -950,6 +958,8 @@ html{
 }
 
 @media(min-width: 701px){
+
+
     .box_transparent{
         width: 40vw;
         height: 40vh;
@@ -993,6 +1003,7 @@ html{
     .our_project_box3{
         grid-row: 2/2;
         grid-column: 1/1;
+
     }
     .our_project_box4{
         grid-row: 2/2;
